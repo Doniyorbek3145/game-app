@@ -1,0 +1,49 @@
+.doctor-task-one {
+    .animation-one {
+        position: absolute;
+        top: 310px;
+        left: 500px;
+        width: 150px;
+        animation: moveRight 5s linear forwards;
+        animation-delay: 3s;
+    }
+
+    .animation-two {
+        position: absolute;
+        top: 270px;
+        left: 270px;
+        transform: rotateY(180deg);
+        width: 400px;
+    }
+
+    .animation-three {
+        position: absolute;
+        top: 0;
+        width: 45px;
+        left: 48.65%;
+        top: 275px;
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(0);
+        visibility: hidden;
+    }
+
+    1% {
+        visibility: visible;
+    }
+
+    99% {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(250%);
+        visibility: hidden;
+        opacity: 0;
+    }
+
+}

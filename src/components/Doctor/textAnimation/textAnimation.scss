@@ -1,0 +1,26 @@
+.text-animation{
+    
+
+    .first{
+
+        transition: 1s linear;
+        opacity: 0;
+
+        &.show{
+            display: inline-block;
+            opacity: 1;
+        }
+    }
+
+    .last{
+
+        transition: 1s linear;
+        opacity: 0;
+
+        &.show{
+            display: inline-block;
+            opacity: 1;
+            transform: translateY(-80px);
+        }
+    }
+}

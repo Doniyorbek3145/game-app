@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.doctorComponent {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+
+    .background-image {
+        transition: 0.5s;
+
+        &.blur {
+            filter: blur(10px);
+        }
+
+        img {
+
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .doctor-pic{
+        position: fixed;
+        bottom: 0px;
+        right: 50px;
+        transform: translateY(50px);
+        
+    }
+
+    .cloud {
+        .pic {
+            width: 450px;
+            position: fixed;
+            right: 350px;
+            top: 35px;
+            z-index: 500;
+
+            div:first-child {
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+
+                img {
+                    width: 400px;
+                    border: 2px solid black;
+                    border-radius: 80%;
+                }
+            }
+
+            div:nth-child(2) {
+                transform: translate(270px, -40px);
+                width: 100px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            div:last-child {
+                width: 40px;
+                transform: translate(340px, -60px);
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+
+        .text {
+            z-index: 600;
+            width: 350px;
+            position: fixed;
+            right: 420px;
+            top: 125px;
+            font-family: 'Aclonica';
+            font-size: 25px;
+            font-weight: 400;
+            line-height: 30px;
+            text-align: center;
+
+        }
+    }
+}

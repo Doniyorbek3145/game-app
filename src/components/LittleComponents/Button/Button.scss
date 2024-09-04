@@ -1,0 +1,117 @@
+
+
+/* .button-component {
+    background: linear-gradient(95.11deg, #28D114 2.85%, #146B0A 253.76%);
+    width: 250px;
+    height: 70px;
+    border-radius: 500px;
+    border: none;
+
+    font-family: 'Aclonica';
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+
+    position: absolute;
+    left: 70px;
+    bottom: 30px;
+    
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0px 0px 18px 5px rgb(0, 255, 4);
+        transition: 0.5s;
+    }
+
+    &:focus-visible{
+        outline: none;
+        border: 3px solid rgb(0, 255, 4);
+        box-shadow: 0px 0px 18px 5px rgb(0, 255, 4);
+    }
+} */
+
+.button-component {
+    position: absolute;
+    bottom: 0px;
+    left: 70px;
+
+    * {
+        outline: none;
+        text-decoration: none;
+        border: none;
+    }
+
+    body {
+        background-color: #ecf0f1;
+        font-size: 2rem;
+        font-family: arial;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div {
+        margin: 50px auto;
+    }
+
+    .btn {
+        padding: 15px;
+        font-weight: 700;
+        font-size: 2rem;
+        text-decoration: none;
+        text-align: center;
+        transition: all .5s ease;
+    }
+
+    .btn--action {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 1.5rem;
+        background: linear-gradient(95.11deg, #28D114 2.85%, #146B0A 253.76%);
+        transition: all .5s ease 0s;
+        color: white;
+        box-shadow: 0 10px rgb(0, 255, 4);
+        font-family: 'Aclonica' !important;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .btn--action span {
+        display: inline-block;
+        position: relative;
+        transition: all .5s ease;
+    }
+
+    .btn--action span:before {
+        content: '\f04b';
+        color: white;
+        font-size: 1rem;
+        font-family: 'FontAwesome';
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        left: 1.5rem;
+        opacity: 0;
+        transition: all .1s ease 0s;
+    }
+
+    .btn--action:hover span {
+        padding-left: 1.5rem;
+    }
+
+    .btn--action:hover span:before {
+        left: 0;
+        opacity: 1;
+    }
+
+    button a {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+}
